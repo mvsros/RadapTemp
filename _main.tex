@@ -1,0 +1,115 @@
+\documentclass[10pt,twoside]{article} %,draft a4paper,
+%\usepackage[89]{pagesel}			%,files формування PDF в діапазоні сторінок
+\usepackage{cmap}					% пошук в PDF
+\usepackage[left=2.0cm, right=2.0cm, top=2cm, bottom=2cm]{geometry}   %розміри сторінки ,twoside
+\usepackage[utf8x]{inputenc} 		% кодування
+\usepackage{radap}					% стильовий файл журналу 
+
+\usepackage{float}          % defines \newfloat
+\usepackage{url}
+\usepackage[
+pdftex,
+colorlinks,%
+%linkcolor=blue,citecolor=red,urlcolor=blue,
+linkcolor=black,citecolor=black,urlcolor=black,
+hyperindex,%
+plainpages=false,%
+unicode=true,
+bookmarksopen,%
+%bookmarksnumbered,%
+%pdftitle={The evaluation of monitoring informative features, signatures and the measures of their ambiguity during recognition objects and sources of monitoring in the information environment of telecommunication systems},
+%pdfauthor={Iliashov O. A.},
+%pdfsubject={Visnyk NTUU KPI. Series Radiotekhnika Radioaparatobuduvannia},
+%pdfkeywords={monitoring features; signatures; informational losses; entropy}
+]{hyperref}
+
+	
+	
+\usepackage[all]{hypcap}
+
+\usepackage{latexsym,amsmath,amsfonts,amssymb,amsthm,mathrsfs}
+\usepackage{cite,hhline}
+\usepackage{lscape}
+
+\usepackage[warn]{mathtext}			% Киричні символи у формулах
+\usepackage[english,russian,ukrainian]{babel}	%переноси
+\usepackage[T2A]{fontenc}
+\usepackage{textcomp, enumerate,color}	% Додаткові символи
+
+\usepackage{indentfirst}		% Отступ первого абзаца
+
+\setlength\fboxsep{3pt} 		% Отступ рамки \fbox{} от рисунка
+\setlength\fboxrule{1pt} 		% Толщина линий рамки \fbox{}
+\usepackage{wrapfig} 			% Обтекание рисунков и таблиц текстом
+\usepackage{graphics,epsfig} 	% Рисунки
+\usepackage{epstopdf}			% Рисунки формату eps
+
+\usepackage{multicol,caption}	% набір тесту у колонки, аголовки 
+\usepackage{tabularx} 
+\captionsetup[table]{
+	labelsep = newline,
+	%textfont = sc, 
+	%name = TABLE, 
+	justification=justified,
+	singlelinecheck=false,%%%%%%% a single line is centered by default
+	labelsep=space,%%%%%%colon
+	skip = \medskipamount
+}
+\captionsetup[figure]{
+	labelsep = newline,
+	%textfont = sc, 
+%	name = Fig., 
+	justification=centerlast,
+	singlelinecheck=false,%%%%%%% a single line is centered by default
+	labelsep=period,%%%%%%colon
+	skip = \medskipamount
+}
+
+
+
+\begin{document}\allowdisplaybreaks
+
+\newpage
+%\setcounter{section}{0}
+%\setcounter{equation}{0}
+%\setcounter{figure}{0}
+%\renewcommand{\ehkol}{Iliashov O. A.}
+%\renewcommand{\ohkol}{The evaluation of monitoring informative features, signatures and the measures of their ambiguity \ldots}
+%\Vykh{radap1354:FirstPage}{radap1354:LastPage}
+\begin{multicols}{2}
+[
+\UDC{621.39} %\noUDC{}
+%\renewcommand{\ehkol}{Ільяшов О. А.}
+%\renewcommand{\ohkol}{Оцінка інформативності моніторингових ознак і сигнатур та міри їх невизначеності \ldots}
+\Title{Шаблон оформлення статті для журналу <<Вісник НТУУ ``КПІ''. Серія Радіотехніка. Радіоапаратобудування>>}\label{radap1354:FirstPage}
+\Authors{Автор1 І. Б., Автор2 І. Б.}
+\aff{Харківський національний університет радіоелектроніки, м. Харків, Україна\\Національний університет ``Львівська політехніка'', м. Львів, Україна}
+\Address{}{\href{mailto:author@email.ua}{authorv@email.ua}}
+\AbsKeywords{У роботі представлені вимоги щодо оформлення статей для подання у збірник наукових праць ``Вісник Національного технічного університету України <<Київський політехнічний інститут>>. Серія Радіотехніка. Радіоапаратобудування''. Показано, що дотримання встановлених правил дозволить покращити вашу статтю .
+}
+{Ключові слова}{правила оформлення, радіотехніка, радіоапаратобудування, \LaTeX}
+]
+
+\input{radap1xxx}
+
+\TitleSecond{Название статьи на русском языке }
+
+\Auth{Автор1 И. О., Автор2 И. О.}
+
+\AbsK{В работе представлены требования к оформлению статей для представления в журнал ``Вестник Национального технического университета Украины <<Киевский политехнический институт>>. Серия Радиотехника. Радиоаппаратостроение''. Показано, что использование данного шаблона оформления позволит зберечь Ваше время и уличшит Вашу статью.
+}
+{Ключевые слова}
+{правила оформления, журнал, радиотехника, радиоаппаратостроения, \LaTeX}
+
+\TitleSecond{Title of paper in English}
+
+\Auth{Author1 N. S., Author2 N. S.}
+
+\AbsK{The article estimates the value of informative monitoring features and signatures their efficiency as a measure of ambiguity during recognition sources and objects for monitoring in the information environment of telecommunication systems which are appropriate to assess by magnitude of loss of information. The main idea of the research. The process and mechanism of evaluating information while losses signatures formed on the basis of the monitoring features are considered. Conclusion. Formed appropriate signatures are used in the process of recognition and have basis for decision which of sources belonging to class or operative (phase) state facilities. Optimum numbers of monitoring features in recognition sources object monitoring and optimal number of signatures for identify a source or object are defined. The future for the research. The dependence of signature and possibility concerning correct recognition of monitoring’s object will be set.}
+{Key words}
+{monitoring features; signatures; informational losses; entropy}
+
+\label{radap1354:LastPage}
+\end{multicols}
+
+\end{document}
