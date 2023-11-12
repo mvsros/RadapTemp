@@ -1,0 +1,64 @@
+\documentclass[a4paper, 10pt,twoside]{article} %,draft 
+			\usepackage{cmap}					% пошук в PDF 
+			\usepackage[left=2.0cm, right=2.0cm, top=2.5cm, bottom=2.5cm]{geometry}   %розміри сторінки ,twoside 
+			\usepackage[utf8x]{inputenc} 		% кодування 
+			\usepackage{radap}					% стильовий файл журналу 
+			\usepackage{float}          		% defines \newfloat 
+			\usepackage{url} 
+			\usepackage[ 
+						pdftex, 
+						colorlinks,% 
+						linkcolor=blue,citecolor=red,urlcolor=blue, 
+						hyperindex,% 
+						plainpages=false,% 
+						unicode=true, 
+						bookmarksopen,% 
+					pdftitle={Назва статті}, 
+					pdfauthor={Перелік авторів статті}, 
+					pdfsubject={Visnyk NTUU KPI. Series Radiotekhnika Radioaparatobuduvannia}, 
+					pdfkeywords={пелелік; ключові слова} 
+				]{hyperref} 
+		\usepackage[all]{hypcap} 
+		\usepackage{latexsym,amsmath,amsfonts,amssymb,amsthm,mathrsfs} 
+		\usepackage{cite,hhline} 
+		\usepackage{lscape} 
+
+		\usepackage[english,russian,ukrainian]{babel}	%переноси 
+		\usepackage[T2A]{fontenc} 
+		\usepackage{textcomp, enumerate,color}	% Додаткові символи 
+
+		\usepackage{indentfirst}		% Відступ першого абзацу 
+
+		\setlength\fboxsep{3pt} 		% Відступ рамки \fbox{} від рисунку 
+		\setlength\fboxrule{1pt} 		% Товщина линій рамки \fbox{} 
+
+		\usepackage{graphics,epsfig} 	% Рисунки 
+		\usepackage{epstopdf}			% Рисунки формату eps 
+
+		\usepackage{multirow,multicol,caption}	% набір тесту у колонки, аголовки 
+		\usepackage{tabularx} 
+		\captionsetup[table]{ 
+			labelsep = newline, 
+			%textfont = sc, 
+			%name = TABLE, 
+			justification=justified, 
+			singlelinecheck=false,%%%%%%% a single line is centered by default 
+			labelsep=space,%%%%%%colon 
+			skip = \medskipamount 
+		} 
+	
+		\captionsetup[figure]{ 
+					labelsep = newline, 
+			%textfont = sc, 
+			%name = Fig., 
+			justification=centerlast, 
+			singlelinecheck=false,%%%%%%% a single line is centered by default 
+			labelsep=period,%%%%%%colon 
+			skip = \medskipamount 
+		}
+		
+\begin{document}
+	
+		\input{metadata-1ххх.tex}
+
+\end{document}
